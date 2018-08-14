@@ -36,6 +36,14 @@ def test_parser_with_cell_and_all_opt(parser):
     args = parser.parse_args([cell, '--all'])
     assert args.all
 
+def test_parser_with_wrong_ip_value(parser):
+    """
+    Parser returns error if wrong format
+    for ip
+    """
+    with pytest.raises(SystemExit):
+        parser.parse_args([cell, '--ip' 'sucker'])
+
 
 def test_parser_with_ip_address(parser):
     """
@@ -44,7 +52,6 @@ def test_parser_with_ip_address(parser):
     """
     with pytest.raises(SystemExit):
         parser.parse_args([cell, '--ip'])
-
 
 def test_parser_with_unsupported_product(parser):
     """

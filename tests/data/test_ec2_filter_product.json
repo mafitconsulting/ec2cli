@@ -1,0 +1,250 @@
+[
+    {
+        "Instances": [
+            {
+                "Monitoring": {
+                    "State": "disabled"
+                }, 
+                "PublicDnsName": "", 
+                "State": {
+                    "Code": 16, 
+                    "Name": "running"
+                }, 
+                "EbsOptimized": false, 
+                "LaunchTime": "2018-07-25 12:24:56+00:00", 
+                "PrivateIpAddress": "100.100.3.236", 
+                "ProductCodes": [], 
+                "VpcId": "vpc-085d88f76958c9a96", 
+                "CpuOptions": {
+                    "CoreCount": 2, 
+                    "ThreadsPerCore": 1
+                }, 
+                "StateTransitionReason": "", 
+                "InstanceId": "i-078dfb89df600c0a0", 
+                "EnaSupport": true, 
+                "ImageId": "ami-7d929002", 
+                "PrivateDnsName": "ip-100-100-3-236.ec2.internal", 
+                "SecurityGroups": [
+                    {
+                        "GroupName": "role-whc-base", 
+                        "GroupId": "sg-00a690e5a6f56a119"
+                    }, 
+                    {
+                        "GroupName": "role-build-jobs", 
+                        "GroupId": "sg-0283b954b4697252a"
+                    }
+                ], 
+                "ClientToken": "", 
+                "SubnetId": "subnet-01cc36c999b142b38", 
+                "InstanceType": "t2.medium", 
+                "NetworkInterfaces": [
+                    {
+                        "Status": "in-use", 
+                        "MacAddress": "12:b1:16:20:a5:f0", 
+                        "SourceDestCheck": true, 
+                        "VpcId": "vpc-085d88f76958c9a96", 
+                        "Description": "", 
+                        "NetworkInterfaceId": "eni-01dde371a94a7574b", 
+                        "PrivateIpAddresses": [
+                            {
+                                "PrivateDnsName": "ip-100-100-3-236.ec2.internal", 
+                                "Primary": true, 
+                                "PrivateIpAddress": "100.100.3.236"
+                            }
+                        ], 
+                        "PrivateDnsName": "ip-100-100-3-236.ec2.internal", 
+                        "Attachment": {
+                            "Status": "attached", 
+                            "DeviceIndex": 0, 
+                            "DeleteOnTermination": true, 
+                            "AttachmentId": "eni-attach-0d8d5c77138f7c854", 
+                            "AttachTime": "2018-07-25 12:24:56+00:00"
+                        }, 
+                        "Groups": [
+                            {
+                                "GroupName": "role-whc-base", 
+                                "GroupId": "sg-00a690e5a6f56a119"
+                            }, 
+                            {
+                                "GroupName": "role-build-jobs", 
+                                "GroupId": "sg-0283b954b4697252a"
+                            }
+                        ], 
+                        "Ipv6Addresses": [], 
+                        "OwnerId": "155728576375", 
+                        "SubnetId": "subnet-01cc36c999b142b38", 
+                        "PrivateIpAddress": "100.100.3.236"
+                    }
+                ], 
+                "SourceDestCheck": true, 
+                "Placement": {
+                    "Tenancy": "default", 
+                    "GroupName": "", 
+                    "AvailabilityZone": "us-east-1a"
+                }, 
+                "Hypervisor": "xen", 
+                "BlockDeviceMappings": [
+                    {
+                        "DeviceName": "/dev/sda1", 
+                        "Ebs": {
+                            "Status": "attached", 
+                            "DeleteOnTermination": false, 
+                            "VolumeId": "vol-0c1d212ca3a006930", 
+                            "AttachTime": "2018-07-25 12:24:57+00:00"
+                        }
+                    }
+                ], 
+                "Architecture": "x86_64", 
+                "RootDeviceType": "ebs", 
+                "RootDeviceName": "/dev/sda1", 
+                "VirtualizationType": "hvm", 
+                "Tags": [
+                    {
+                        "Value": "WHC-njpxbld06job001.aws-us-east-1.njp.williamhill.plc", 
+                        "Key": "whc_build"
+                    }, 
+                    {
+                        "Value": "njpxbld06job001", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "Jumphost", 
+                        "Key": "description"
+                    }, 
+                    {
+                        "Value": "ansible", 
+                        "Key": "origin"
+                    }
+                ], 
+                "AmiLaunchIndex": 0
+            }
+        ], 
+        "ReservationId": "r-084bdcda841e1664e", 
+        "Groups": [], 
+        "OwnerId": "155728576375"
+    }, 
+    {
+        "Instances": [
+            {
+                "Monitoring": {
+                    "State": "disabled"
+                }, 
+                "PublicDnsName": "", 
+                "State": {
+                    "Code": 16, 
+                    "Name": "running"
+                }, 
+                "EbsOptimized": false, 
+                "LaunchTime": "2018-07-25 12:24:35+00:00", 
+                "PrivateIpAddress": "100.100.2.64", 
+                "ProductCodes": [], 
+                "VpcId": "vpc-085d88f76958c9a96", 
+                "CpuOptions": {
+                    "CoreCount": 2, 
+                    "ThreadsPerCore": 1
+                }, 
+                "StateTransitionReason": "", 
+                "InstanceId": "i-00ac2f610b3f509ec", 
+                "EnaSupport": true, 
+                "ImageId": "ami-7d929002", 
+                "PrivateDnsName": "ip-100-100-2-64.ec2.internal", 
+                "SecurityGroups": [
+                    {
+                        "GroupName": "role-build-pxeboot", 
+                        "GroupId": "sg-058719923c519e362"
+                    }, 
+                    {
+                        "GroupName": "role-whc-base", 
+                        "GroupId": "sg-00a690e5a6f56a119"
+                    }
+                ], 
+                "ClientToken": "", 
+                "SubnetId": "subnet-01cc36c999b142b38", 
+                "InstanceType": "t2.medium", 
+                "NetworkInterfaces": [
+                    {
+                        "Status": "in-use", 
+                        "MacAddress": "12:d2:5f:c7:ad:40", 
+                        "SourceDestCheck": true, 
+                        "VpcId": "vpc-085d88f76958c9a96", 
+                        "Description": "", 
+                        "NetworkInterfaceId": "eni-002a7ee234c08a6e7", 
+                        "PrivateIpAddresses": [
+                            {
+                                "PrivateDnsName": "ip-100-100-2-64.ec2.internal", 
+                                "Primary": true, 
+                                "PrivateIpAddress": "100.100.2.64"
+                            }
+                        ], 
+                        "PrivateDnsName": "ip-100-100-2-64.ec2.internal", 
+                        "Attachment": {
+                            "Status": "attached", 
+                            "DeviceIndex": 0, 
+                            "DeleteOnTermination": true, 
+                            "AttachmentId": "eni-attach-08babcca8d89348d4", 
+                            "AttachTime": "2018-07-25 12:24:35+00:00"
+                        }, 
+                        "Groups": [
+                            {
+                                "GroupName": "role-build-pxeboot", 
+                                "GroupId": "sg-058719923c519e362"
+                            }, 
+                            {
+                                "GroupName": "role-whc-base", 
+                                "GroupId": "sg-00a690e5a6f56a119"
+                            }
+                        ], 
+                        "Ipv6Addresses": [], 
+                        "OwnerId": "155728576375", 
+                        "SubnetId": "subnet-01cc36c999b142b38", 
+                        "PrivateIpAddress": "100.100.2.64"
+                    }
+                ], 
+                "SourceDestCheck": true, 
+                "Placement": {
+                    "Tenancy": "default", 
+                    "GroupName": "", 
+                    "AvailabilityZone": "us-east-1a"
+                }, 
+                "Hypervisor": "xen", 
+                "BlockDeviceMappings": [
+                    {
+                        "DeviceName": "/dev/sda1", 
+                        "Ebs": {
+                            "Status": "attached", 
+                            "DeleteOnTermination": false, 
+                            "VolumeId": "vol-0a35a1da35d8d4346", 
+                            "AttachTime": "2018-07-25 12:24:36+00:00"
+                        }
+                    }
+                ], 
+                "Architecture": "x86_64", 
+                "RootDeviceType": "ebs", 
+                "RootDeviceName": "/dev/sda1", 
+                "VirtualizationType": "hvm", 
+                "Tags": [
+                    {
+                        "Value": "ansible", 
+                        "Key": "origin"
+                    }, 
+                    {
+                        "Value": "Jumphost", 
+                        "Key": "description"
+                    }, 
+                    {
+                        "Value": "njpxbld06api001", 
+                        "Key": "Name"
+                    }, 
+                    {
+                        "Value": "WHC-njpxbld06api001.aws-us-east-1.njp.williamhill.plc", 
+                        "Key": "whc_build"
+                    }
+                ], 
+                "AmiLaunchIndex": 0
+            }
+        ], 
+        "ReservationId": "r-03db14fcc1913f078", 
+        "Groups": [], 
+        "OwnerId": "155728576375"
+    }
+]

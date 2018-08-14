@@ -24,7 +24,7 @@ def filter_inst(*args):
     if os.getenv('AWS_DEFAULT_REGION'):
         validate_cell = config(args[0])[7]
         if validate_cell != os.environ['AWS_DEFAULT_REGION']:
-            sys.exit("Argument cell does not match sourced envrionment")
+            sys.exit("Argument cell does not match sourced environment")
 
 
     try:

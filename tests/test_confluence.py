@@ -9,7 +9,7 @@ def test_confluence_connectivity_for_njp():
     Assert configuration for am1
     """
     cell = 'njp'
-    server, user, passwd, parent_id, page_id, title, response = ec2cli.config(cell)
+    server, user, passwd, parent_id, page_id, title, response , region = ec2cli.config(cell)
 
     assert server == 'https://conf.willhillatlas.com'
     assert user == 'generic.fieldhouse'
@@ -24,7 +24,7 @@ def test_confluence_connectivity_for_am1():
     Assert configuration for am1
     """
     cell = 'am1'
-    server, user, passwd, parent_id, page_id, title, response = ec2cli.config(cell)
+    server, user, passwd, parent_id, page_id, title, response, region = ec2cli.config(cell)
 
     assert server == 'https://conf.willhillatlas.com'
     assert user == 'generic.fieldhouse'
