@@ -9,17 +9,15 @@ from ec2cli import config
 
 def filter_inst(*args):
     """ return instances """
-
-    ec2_instances = boto3.client('ec2')
+    try:
+        ec2_instances = boto3.client('ec2')
+    except botocore.exceptions.ClientError:
+        sys.exit("Error connecting to EC2 API, make sure you've sourced the correct\
+environment or your session has not expired!")
     res = []
 
     # product dictionary
-    product_dict = {
-        'bld': "xbld*",
-        'pup': "xpup*",
-        'jmp': "xjmp*",
-        'pds': "xpds*",
-    }
+    product_dict = config(args[0])[8]
 
     if os.getenv('AWS_DEFAULT_REGION'):
         validate_cell = config(args[0])[7]
@@ -45,10 +43,11 @@ def filter_inst(*args):
 
     except (TypeError, NameError) as ex:
         print(ex)
-
     except botocore.exceptions.ClientError:
         sys.exit("Error connecting to EC2 API, make sure you've sourced the correct\
- environment or your session has not expired!")
+environment or your session has not expired!")
+
+
     else:
         instances = sum(
             [

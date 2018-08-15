@@ -33,8 +33,9 @@ def config(cell):
         title = conf[cell]['title']
         response = conf[cell]['response']
         region = conf[cell]['region']
+        product = conf['product']
         assert isinstance(response, object)
-        return url, username, password, parent_id, page_id, title, response, region
+        return url, username, password, parent_id, page_id, title, response, region, product
 
 def main():
     """ MAIN """

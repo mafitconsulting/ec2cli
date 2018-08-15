@@ -6,7 +6,7 @@ with open('README.rst', 'r') as f:
 setup(
     name='ec2cli',
     version='1.0.0',
-    description='ec2 instance configuration for AWS cells',
+    description='ec2 instance instrumetation for AWS cells',
     long_description=readme,
     author='Mark Fieldhouse',
     author_email='Mark.Fieldhouse@mafitconsulting.co.uk',

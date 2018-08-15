@@ -7,7 +7,7 @@ from ec2cli import config
 def update_page(cell, content):
     """ update method """
     cipher = Security('ec2cli')
-    server, user, passwd, parent_id, page_id, title, response, region = config(cell)
+    server, user, passwd, parent_id, page_id, title, response, region, product = config(cell)
     confluence = Confluence(
         url=server,
         username=user,
